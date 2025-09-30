@@ -1,0 +1,317 @@
+a {
+    color : black;
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: 1em;
+    color: #242424;
+}
+
+em {
+    color : #A5B4FC;
+    font-style: normal;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5em;
+    color: #A5B4FC;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: Manrope;
+}
+
+li {
+    font-size: 1em;
+    font-family: Manrope;
+}
+header, footer{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body{
+    background-color: #1F2039;
+    margin: auto;
+}
+
+p, li, h2{
+    color: #F9F8FF;
+}
+/* main{
+    position: absolute;
+} */
+
+.ajout{
+    background:linear-gradient(#8E86B5, #ACAEED);
+    color: white;
+    border-radius: 50px;
+    padding: 25px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 0px;
+    border: none;
+    
+}
+
+.titre_apropos{
+    text-align: center;
+}
+
+.carre{
+    border-right: 1px #8E86B5 solid;
+    border-bottom: 1px #8E86B5 solid;
+
+}
+.carre p{
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.ajout:hover{
+    background: linear-gradient(#696484, #8788BA);
+    text-decoration: none;
+}
+
+header:hover, footer:hover{
+    opacity: 0.5;
+}
+
+* {
+    margin: 0;
+}
+
+section{
+    padding: 40px; 
+    margin-top: 1px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+
+p a[href="images/robbie-lens.png"] img
+{
+    border: solid black;
+    margin-left: 50px;
+    width: 419px;
+    height: 425px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px 5px 20px;
+    padding-left: 30px;
+}
+nav div{
+    padding-left: 50px;
+}
+nav div a{
+    padding-right: 2em;
+    margin-bottom: 2em;
+}
+/* .Accueil{
+
+} */
+
+
+.conteneur_accueil{
+    display: flex;
+    padding: 40px 60px;
+    margin: 30px 65px 0px 65px;
+
+}
+div {
+    margin-top: 15px;
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ajout_apropos, input[value="ENVOYER"]{
+    background:linear-gradient(#8E86B5, #ACAEED);
+    color: white;
+    border-radius: 50px;
+    padding: 12px;
+    position: absolute;
+    text-align: center;
+    display: inline;
+    margin-top: 0.5px;
+    
+}
+.portfolio-section-photos .voyages,.portfolio-section-photos .portrait {
+    display: grid;
+    grid-template: repeat(3, 300px) / repeat(3, 1fr); 
+    grid-gap: 15px;
+    /* grid-template-areas: 
+        "h"
+    "i" "i" "i" 
+    "i" "i" "i"
+    "i" "i" "i"; */
+}
+img[alt^="paysage"],img[alt^="portrait"]{
+  width: 100%;
+  height: 100%;
+  /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+  object-fit: cover;
+}
+
+.portfolio-section-photos h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #1F2039;
+}
+.portfolio-section-photos .titre2{
+        margin-top: 15%;
+}
+.photo, .portfolio-section-photos{
+    background-color: white;
+}
+
+.ajout, .ajout_apropos{
+    display: inline-block;
+    position: absolute;
+    left: 45%;    
+}
+ /* .ajout_apropos{
+     padding: 80px; 
+ } */
+.Services{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.Services + ul{
+    padding-left: 45%;
+    padding-bottom: 15px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 3fr 0.1fr 0.1fr;
+    grid-template-rows: 0.5fr;
+}
+center
+ img[alt*="portrait"],img[alt*=paysage]{
+    position: relative;
+}  
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    
+}
+ img[alt*="portrait"]:hover,img[alt*=paysage]:hover{
+    display: block;
+   
+    opacity: 70%;
+ }
+/* .voyages img{
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+ } */
+
+
+td,th{
+    border: 1px #8E86B5 solid;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    color: white;
+    margin-bottom: 30px;
+}
+td{
+    padding: 90px;
+}
+th{
+    padding: 15px;
+}
+
+caption{
+    margin: 80px;
+    position: relative;
+    left: 50px;
+    
+}
+
+form{
+    color: white;
+    font-family: Montserrat;
+    
+
+}
+.form-nom-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input, label[for='nom email']{
+    display: block;
+}
+.contact h3{
+    color: #8E86B5;
+    text-align: center;
+    font-size: 2em;
+    margin: 80px;
+}
+.form-nom input{
+    width: 200px;
+
+}
+input[id="nom"], input[id="mail"]{
+    width: 450px;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+textarea, label[for='message']{
+    margin-left: 100px;
+}
+textarea{
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1000px){
+   
+    h1{
+        font-size: 2em;
+    }
+    .conteneur_accueil, form{
+        width: 250;
+    }
+    table{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px){
+    img, .conteneur_accueil, form{
+        display: flex;
+        flex-direction: column;
+    }
+    *{
+        padding: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
